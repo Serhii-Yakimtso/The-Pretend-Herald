@@ -1,0 +1,173 @@
+@import "./reset.css";
+@import "./common.css";
+
+.header {
+  padding-top: 72px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.header-container {
+  display: grid;
+  grid-template-columns: 88px 1fr 88px;
+  gap: 8px;
+}
+.header-decoration {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.newspaper-title {
+  margin-bottom: 8px;
+
+  font-family: Nova Cut;
+  font-size: 72px;
+  line-height: 1;
+  text-align: center;
+  color: #000000;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.newspaper-data {
+  font-family: Fira Sans;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.main-title {
+  font-family: Fira Sans;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1, 05;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.main-section {
+  display: grid;
+  grid-template-columns: 4fr 5fr 3fr;
+  gap: 24px;
+}
+.article {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  gap: 16px;
+}
+.title {
+  font-family: Fira Sans;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.125;
+  text-align: left;
+  color: #000000;
+
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.author {
+  font-family: Fira Sans;
+  font-size: 12px;
+  line-height: 1.33;
+  color: rgba(0, 0, 0, 0.5);
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.text {
+  font-family: Fira Sans;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #000000;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.caption {
+  font-family: Fira Sans;
+  font-size: 12px;
+  line-height: 1.33;
+  color: rgba(0, 0, 0, 0.5);
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.sub-title {
+  font-family: Fira Sans;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.17;
+  color: #000000;
+
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.image {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 12px;
+}
+.second-section {
+  display: grid;
+  grid-template-columns: 276px 276px 1fr;
+  gap: 12px;
+}
+
+.second-section .article:not(:last-child) {
+  padding-right: 12px;
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.tertiary-title {
+  font-family: Fira Sans;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.22;
+  color: #000000;
+
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.long-text {
+  column-count: 4;
+  column-gap: 24px;
+}
+
+.third-section {
+  display: grid;
+  grid-template-columns: 426px 288px 1fr;
+  gap: 24px;
+}
+
+.third-section img {
+  height: 284px;
+}
+.third-section > .wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 32px;
+}
+.weather {
+  display: grid;
+  grid-template-columns: 276px 1fr;
+  column-gap: 24px;
+
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.weather > .wrapper {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 16px;
+}
+.forecast th {
+  width: 121px;
+  /* border: ; */
+}
+.forecast tr {
+  height: 48px;
+}
+.forecast td {
+  padding: 12px;
+}
